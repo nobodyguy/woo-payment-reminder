@@ -22,7 +22,7 @@ add_action( 'plugins_loaded', 'wpr_load_textdomain' );
 
 // Register custom email template
 function wpr_register_custom_email( $email_classes ) {
-    require_once plugin_dir_path( __FILE__ ) . 'woocommerce/emails/class-wc-email-payment-reminder.php';
+    require_once plugin_dir_path( __FILE__ ) . 'classes/class-wc-email-payment-reminder.php';
     $email_classes['WC_Email_Payment_Reminder'] = new WC_Email_Payment_Reminder();
     return $email_classes;
 }

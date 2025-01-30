@@ -16,6 +16,7 @@ class WC_Email_Payment_Reminder extends WC_Email {
         $this->template_plain = 'emails/payment-reminder-plain.php';
 
         $this->recipient = '';
+        $this->customer_email = true; // Marks this email as a customer email
 
         parent::__construct();
 
@@ -54,5 +55,39 @@ class WC_Email_Payment_Reminder extends WC_Email {
         $this->setup_locale();
         $this->send( $this->get_recipient(), $this->get_subject(), $this->get_content(), $this->get_headers(), $this->get_attachments() );
         $this->restore_locale();
+    }
+
+    public function get_headers() {
+        return "Content-Type: text/html\r\n";
+    }
+
+    public function get_content_html() {
+        return wc_get_template_html(
+            $this->template_html,
+            array(
+                'order'         => $this->object,
+                'email_heading' => $this->get_heading(),
+                'sent_to_admin' => false,
+                'plain_text'    => false,
+                'email'         => $this
+            ),
+            '',
+            plugin_dir_path( __FILE__ ) . '../templates/'
+        );
+    }
+    
+    public function get_content_plain() {
+        return wc_get_template_html(
+            $this->template_plain,
+            array(
+                'order'         => $this->object,
+                'email_heading' => $this->get_heading(),
+                'sent_to_admin' => false,
+                'plain_text'    => true,
+                'email'         => $this
+            ),
+            '',
+            plugin_dir_path( __FILE__ ) . '../templates/'
+        );
     }
 }
