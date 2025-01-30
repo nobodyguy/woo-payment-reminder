@@ -1,0 +1,41 @@
+msgid "Payment Reminder"
+msgstr "Payment Reminder"
+
+msgid "Sends a reminder email for unpaid orders after a configurable number of days."
+msgstr "Sends a reminder email for unpaid orders after a configurable number of days."
+
+msgid "Reminder: Complete your payment for order #{order_id}"
+msgstr "Reminder: Complete your payment for order #{order_id}"
+
+msgid "Enable/Disable"
+msgstr "Enable/Disable"
+
+msgid "Enable this email"
+msgstr "Enable this email"
+
+msgid "Days before first reminder"
+msgstr "Days before first reminder"
+
+msgid "Days before second reminder"
+msgstr "Days before second reminder"
+
+msgid "Hello %s,"
+msgstr "Hello %s,"
+
+msgid "We noticed that your order <strong>#%s</strong> is still awaiting payment."
+msgstr "We noticed that your order <strong>#%s</strong> is still awaiting payment."
+
+msgid "To complete your purchase, please proceed with the payment at your earliest convenience."
+msgstr "To complete your purchase, please proceed with the payment at your earliest convenience."
+
+msgid "Pay Now"
+msgstr "Pay Now"
+
+msgid "Payment link:"
+msgstr "Payment link:"
+
+msgid "If you have already completed the payment, please ignore this message."
+msgstr "If you have already completed the payment, please ignore this message."
+
+msgid "Thank you for shopping with us."
+msgstr "Thank you for shopping with us."

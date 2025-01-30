@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Woo Payment Reminder 1.0.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Jan Gnip <https://github.com/nobodyguy>\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Payment Reminder"
+msgstr ""
+
+msgid "Sends a reminder email for unpaid orders after a configurable number of days."
+msgstr ""
+
+msgid "Reminder: Complete your payment for order #{order_id}"
+msgstr ""
+
+msgid "Enable/Disable"
+msgstr ""
+
+msgid "Enable this email"
+msgstr ""
+
+msgid "Days before first reminder"
+msgstr ""
+
+msgid "Days before second reminder"
+msgstr ""
+
+msgid "Hello %s,"
+msgstr ""
+
+msgid "We noticed that your order <strong>#%s</strong> is still awaiting payment."
+msgstr ""
+
+msgid "To complete your purchase, please proceed with the payment at your earliest convenience."
+msgstr ""
+
+msgid "Pay Now"
+msgstr ""
+
+msgid "Payment link:"
+msgstr ""
+
+msgid "If you have already completed the payment, please ignore this message."
+msgstr ""
+
+msgid "Thank you for shopping with us."
+msgstr ""

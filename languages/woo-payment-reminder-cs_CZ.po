@@ -1,0 +1,41 @@
+msgid "Payment Reminder"
+msgstr "Připomenutí platby"
+
+msgid "Sends a reminder email for unpaid orders after a configurable number of days."
+msgstr "Odesílá e-mail s připomenutím platby po konfigurovatelném počtu dní."
+
+msgid "Reminder: Complete your payment for order #{order_id}"
+msgstr "Připomenutí: Dokončete platbu za objednávku #{order_id}"
+
+msgid "Enable/Disable"
+msgstr "Povolit/Zakázat"
+
+msgid "Enable this email"
+msgstr "Povolit tento e-mail"
+
+msgid "Days before first reminder"
+msgstr "Dny před prvním připomenutím"
+
+msgid "Days before second reminder"
+msgstr "Dny před druhým připomenutím"
+
+msgid "Hello %s,"
+msgstr "Dobrý den %s,"
+
+msgid "We noticed that your order <strong>#%s</strong> is still awaiting payment."
+msgstr "Zjistili jsme, že vaše objednávka <strong>#%s</strong> stále čeká na platbu."
+
+msgid "To complete your purchase, please proceed with the payment at your earliest convenience."
+msgstr "Pro dokončení objednávky prosím proveďte platbu co nejdříve."
+
+msgid "Pay Now"
+msgstr "Zaplatit nyní"
+
+msgid "Payment link:"
+msgstr "Odkaz k platbě:"
+
+msgid "If you have already completed the payment, please ignore this message."
+msgstr "Pokud jste již platbu provedli, tento e-mail ignorujte."
+
+msgid "Thank you for shopping with us."
+msgstr "Děkujeme za váš nákup."
