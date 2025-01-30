@@ -14,6 +14,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+define( 'WPR_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+
 // Load plugin translations
 function wpr_load_textdomain() {
     load_plugin_textdomain( 'woo-payment-reminder', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );

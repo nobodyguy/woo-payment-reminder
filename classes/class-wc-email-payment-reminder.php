@@ -13,7 +13,8 @@ class WC_Email_Payment_Reminder extends WC_Email {
         $this->subject        = __( 'Reminder: Complete your payment for order #{order_id}', 'woo-payment-reminder' );
 
         $this->template_html  = 'emails/payment-reminder.php';
-        $this->template_plain = 'emails/payment-reminder-plain.php';
+        $this->template_plain = 'emails/plain/payment-reminder.php';
+        $this->template_base  = WPR_PLUGIN_PATH . 'templates/';
 
         $this->recipient = '';
         $this->customer_email = true; // Marks this email as a customer email
@@ -57,10 +58,6 @@ class WC_Email_Payment_Reminder extends WC_Email {
         $this->restore_locale();
     }
 
-    public function get_headers() {
-        return "Content-Type: text/html\r\n";
-    }
-
     public function get_content_html() {
         return wc_get_template_html(
             $this->template_html,
@@ -72,7 +69,7 @@ class WC_Email_Payment_Reminder extends WC_Email {
                 'email'         => $this
             ),
             '',
-            plugin_dir_path( __FILE__ ) . '../templates/'
+            $this->template_base
         );
     }
     
@@ -87,7 +84,7 @@ class WC_Email_Payment_Reminder extends WC_Email {
                 'email'         => $this
             ),
             '',
-            plugin_dir_path( __FILE__ ) . '../templates/'
+            $this->template_base
         );
     }
 }
