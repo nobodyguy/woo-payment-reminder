@@ -44,6 +44,31 @@ class WC_Email_Payment_Reminder extends WC_Email {
                 'default'     => '10',
                 'desc_tip'    => true,
             ),
+            'subject'    => array(
+                'title'       => __( 'Subject', 'woocommerce' ),
+                'type'        => 'text',
+                'desc_tip'    => true,
+                'description' => sprintf( 'This controls the email subject line. Leave blank to use the default subject: <code>%s</code>.', $this->get_subject() ),
+                'placeholder' => $this->get_default_subject(),
+                'default'     => '',
+            ),
+            'heading'    => array(
+                'title'       => __( 'Email Heading', 'woocommerce' ),
+                'type'        => 'text',
+                'desc_tip'    => true,
+                'description' => sprintf( __( 'This controls the main heading contained within the email notification. Leave blank to use the default heading: <code>%s</code>.' ), $this->get_heading() ),
+                'placeholder' => $this->get_default_heading(),
+                'default'     => '',
+            ),
+            'email_type' => array(
+                'title'       => __( 'Email type', 'woocommerce' ),
+                'type'        => 'select',
+                'description' => __( 'Choose which format of email to send.', 'woocommerce' ),
+                'default'     => 'html',
+                'class'       => 'email_type wc-enhanced-select',
+                'options'     => $this->get_email_type_options(),
+                'desc_tip'    => true,
+            ),
         );
     }
 
