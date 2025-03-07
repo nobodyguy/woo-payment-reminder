@@ -76,6 +76,11 @@ class WC_Email_Payment_Reminder extends WC_Email {
         if ( ! $order_id ) return;
 
         $order = wc_get_order( $order_id );
+		if ( ! $order ) {
+			return; // Order doesn't exist
+		}
+        
+        $this->object = $order;
         $this->recipient = $order->get_billing_email();
 
         $this->setup_locale();
