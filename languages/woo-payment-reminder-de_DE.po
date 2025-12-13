@@ -3,106 +3,125 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Woo Payment Reminder 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woo-payment-reminder\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woo-payment-"
+"reminder\n"
+"POT-Creation-Date: 2025-12-13T20:49:09+00:00\n"
+"PO-Revision-Date: 2025-12-13 21:53+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-12-13T20:49:09+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.12.0\n"
+"X-Generator: Poedit 3.8\n"
 "X-Domain: woo-payment-reminder\n"
 
 #. Plugin Name of the plugin
 #: woo-payment-reminder.php
 msgid "Woo Payment Reminder"
-msgstr ""
+msgstr "Woo Payment Reminder"
 
 #. Plugin URI of the plugin
 #: woo-payment-reminder.php
 msgid "https://github.com/nobodyguy/woo-payment-reminder"
-msgstr ""
+msgstr "https://github.com/nobodyguy/woo-payment-reminder"
 
 #. Description of the plugin
 #: woo-payment-reminder.php
-msgid "Automatically sends payment reminder emails after a configurable number of days."
+msgid ""
+"Automatically sends payment reminder emails after a configurable number of "
+"days."
 msgstr ""
+"Versendet automatisch Zahlungserinnerungs-E-Mails nach einer "
+"konfigurierbaren Anzahl von Tagen."
 
 #. Author of the plugin
 #: woo-payment-reminder.php
 msgid "Jan Gnip"
-msgstr ""
+msgstr "Jan Gnip"
 
 #. Author URI of the plugin
 #: woo-payment-reminder.php
 msgid "https://github.com/nobodyguy"
-msgstr ""
+msgstr "https://github.com/nobodyguy"
 
 #: classes/class-wc-email-payment-reminder.php:10
 #: classes/class-wc-email-payment-reminder.php:12
 msgid "Payment Reminder"
-msgstr ""
+msgstr "Zahlungserinnerung"
 
 #: classes/class-wc-email-payment-reminder.php:11
-msgid "Sends a reminder email for unpaid orders after a configurable number of days."
+msgid ""
+"Sends a reminder email for unpaid orders after a configurable number of days."
 msgstr ""
+"Sendet eine Einnerungs-E-Mail für nicht bezahlte Bestellungen nach einer "
+"einstellbaren Anzahl an Tagen."
 
 #: classes/class-wc-email-payment-reminder.php:13
 msgid "Reminder: Complete your payment for order #{order_id}"
-msgstr ""
+msgstr "Erinnerung: Schließe die Zahlung für Bestellung #${order_id} ab"
 
 #: classes/class-wc-email-payment-reminder.php:30
 msgid "Enable/Disable"
-msgstr ""
+msgstr "Aktivieren/Deaktivieren"
 
 #: classes/class-wc-email-payment-reminder.php:32
 msgid "Enable this email"
-msgstr ""
+msgstr "Diese E-Mail aktivieren"
 
 #: classes/class-wc-email-payment-reminder.php:36
 msgid "Days before first reminder"
-msgstr ""
+msgstr "Tage vor der ersten Erinnerung"
 
 #: classes/class-wc-email-payment-reminder.php:42
 msgid "Days before second reminder"
-msgstr ""
+msgstr "Tage vor der zweiten Erinnerung"
 
 #: templates/emails/payment-reminder.php:9
 #: templates/emails/plain/payment-reminder.php:7
 #, php-format
 msgid "Hello %s,"
-msgstr ""
+msgstr "Halloo %s,"
 
 #: templates/emails/payment-reminder.php:13
 #, php-format
-msgid "We noticed that your order <strong>#%s</strong> is still awaiting payment."
+msgid ""
+"We noticed that your order <strong>#%s</strong> is still awaiting payment."
 msgstr ""
+"Wir haben festgestellt, dass deine Bestellung <strong>#%s</strong> noch auf "
+"Zahlung wartet."
 
 #: templates/emails/payment-reminder.php:18
 #: templates/emails/plain/payment-reminder.php:12
-msgid "To complete your purchase, please proceed with the payment at your earliest convenience."
+msgid ""
+"To complete your purchase, please proceed with the payment at your earliest "
+"convenience."
 msgstr ""
+"Um Ihren Kauf abzuschließen, führe bitte die Zahlung so schnell wie möglich "
+"durch."
 
 #: templates/emails/payment-reminder.php:23
 msgid "Pay Now"
-msgstr ""
+msgstr "Jetzt bezahlen"
 
 #: templates/emails/payment-reminder.php:27
 #: templates/emails/plain/payment-reminder.php:19
 msgid "If you have already completed the payment, please ignore this message."
 msgstr ""
+"Wenn du die Zahlung bereits vorgenommen hast, ignoriere bitte diese "
+"Nachricht."
 
 #: templates/emails/payment-reminder.php:29
 #: templates/emails/plain/payment-reminder.php:22
 msgid "Thank you for shopping with us."
-msgstr ""
+msgstr "Vielen Dank für deinen Einkauf bei uns."
 
 #: templates/emails/plain/payment-reminder.php:9
 #, php-format
 msgid "We noticed that your order #%s is still awaiting payment."
 msgstr ""
+"Wir haben festgestellt, dass deine Bestellung #%s noch auf Zahlung wartet."
 
 #: templates/emails/plain/payment-reminder.php:15
 msgid "Payment link:"
-msgstr ""
+msgstr "Zahlungslink:"
