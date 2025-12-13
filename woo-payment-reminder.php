@@ -53,7 +53,7 @@ function wpr_send_payment_reminders() {
 
     $days_to_send_first = intval( $email->get_option( 'days_to_send_first', 7 ) );
     $days_to_send_second = intval( $email->get_option( 'days_to_send_second', 10 ) );
-    $reminder_interval = 3;
+    $reminder_interval = $days_to_send_second - $days_to_send_first;
 
     $args = [
         'status'       => ['pending', 'on-hold'],
@@ -64,14 +64,21 @@ function wpr_send_payment_reminders() {
 
     foreach ( $orders as $order ) {
         $order_id = $order->get_id();
-        $last_reminder_sent = get_post_meta( $order_id, '_payment_reminder_sent', true );
+        $last_reminder_sent = $order->get_meta( '_payment_reminder_sent', true );
 
         if ( $last_reminder_sent && ( time() - $last_reminder_sent ) < ( $reminder_interval * DAY_IN_SECONDS ) ) {
             continue;
         }
 
         do_action( 'send_payment_reminder_email', $order_id );
-        update_post_meta( $order_id, '_payment_reminder_sent', time() );
+        $order->update_meta_data( '_payment_reminder_sent', time() );
+        $order->save();
     }
 }
 add_action( 'wpr_send_payment_reminders', 'wpr_send_payment_reminders' );
+
+add_action( 'before_woocommerce_init', static function() {
+	if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+	}
+} );
