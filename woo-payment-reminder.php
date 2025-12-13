@@ -82,3 +82,11 @@ add_action( 'before_woocommerce_init', static function() {
 		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
 	}
 } );
+
+add_filter( 'storeabill_woo_attach_invoice_to_email', static function( $attach_to_email, $email_id ) {
+    if ( $email_id === 'payment_reminder' ) {
+        $attach_to_email = true;
+    }
+
+    return $attach_to_email;
+}, 10, 2 );
