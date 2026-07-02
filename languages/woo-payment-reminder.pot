@@ -48,8 +48,7 @@ msgstr ""
 msgid "Sends a reminder email for unpaid orders after a configurable number of days."
 msgstr ""
 
-#: classes/class-wc-email-payment-reminder.php:13
-msgid "Reminder: Complete your payment for order #{order_id}"
+msgid "Reminder: Complete your payment for order #{order_number}"
 msgstr ""
 
 #: classes/class-wc-email-payment-reminder.php:30

@@ -4,8 +4,8 @@ msgstr "Payment Reminder"
 msgid "Sends a reminder email for unpaid orders after a configurable number of days."
 msgstr "Sends a reminder email for unpaid orders after a configurable number of days."
 
-msgid "Reminder: Complete your payment for order #{order_id}"
-msgstr "Reminder: Complete your payment for order #{order_id}"
+msgid "Reminder: Complete your payment for order #{order_number}"
+msgstr "Reminder: Complete your payment for order #{order_number}"
 
 msgid "Enable/Disable"
 msgstr "Enable/Disable"
