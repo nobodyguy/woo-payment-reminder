@@ -10,7 +10,7 @@ class WC_Email_Payment_Reminder extends WC_Email {
         $this->title          = __( 'Payment Reminder', 'woo-payment-reminder' );
         $this->description    = __( 'Sends a reminder email for unpaid orders after a configurable number of days.', 'woo-payment-reminder' );
         $this->heading        = __( 'Payment Reminder', 'woo-payment-reminder' );
-        $this->subject        = __( 'Reminder: Complete your payment for order #{order_id}', 'woo-payment-reminder' );
+        $this->subject        = __( 'Reminder: Complete your payment for order #{order_number}', 'woo-payment-reminder' );
 
         $this->template_html  = 'emails/payment-reminder.php';
         $this->template_plain = 'emails/plain/payment-reminder.php';
@@ -82,6 +82,8 @@ class WC_Email_Payment_Reminder extends WC_Email {
         
         $this->object = $order;
         $this->recipient = $order->get_billing_email();
+        
+        $this->placeholders['{order_number}'] = $order->get_order_number();
 
         $this->setup_locale();
         $this->send( $this->get_recipient(), $this->get_subject(), $this->get_content(), $this->get_headers(), $this->get_attachments() );
