@@ -4,8 +4,8 @@ msgstr "Připomenutí platby"
 msgid "Sends a reminder email for unpaid orders after a configurable number of days."
 msgstr "Odesílá e-mail s připomenutím platby po konfigurovatelném počtu dní."
 
-msgid "Reminder: Complete your payment for order #{order_id}"
-msgstr "Připomenutí: Dokončete platbu za objednávku #{order_id}"
+msgid "Reminder: Complete your payment for order #{order_number}"
+msgstr "Připomenutí: Dokončete platbu za objednávku #{order_number}"
 
 msgid "Enable/Disable"
 msgstr "Povolit/Zakázat"
